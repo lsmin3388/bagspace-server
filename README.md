@@ -1,1 +1,1 @@
-# bag-space-server
+# Bagspace Server (based on MSA)

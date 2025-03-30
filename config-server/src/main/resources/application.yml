@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+spring:
+  security:
+    user:
+      name: ${CLOUD_CONFIG_USERNAME}
+      password: ${CLOUD_CONFIG_PASSWORD}
+      roles: ${CLOUD_CONFIG_ROLE}
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${CLOUD_CONFIG_SERVER_GIT_URI}
+          ignore-local-ssh-settings: true
+          private-key: ${CLOUD_CONFIG_SERVER_GIT_PRIVATE_KEY}
